@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz time</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="block">
+        <h3>CRICQUIZ</h3>
+        <p>LET'S GET QUIZZING!</p>
+      </div>
+      <img src="quiz.svg" alt="" />
+    </header>
+    <div class="main-content">
+        <div class="instruction" id="instruction">
+            <h2>Instruction:</h2>
+            <ol>
+                <li>You have 5 Question for every Question you have 15 seconds to answer.</li>
+                <li>For every right answer you will be awarded 10 marks.</li>
+                <li>For ever wrong answer you will be awarded -2.5 marks.</li>
+                <li>Each question is mandatory to answer.</li>
+            </ol>
+            <h1>All The Best!!!!</h1>
+            <Button onclick="start()">Start</Button>
+        </div>
+        <div class="quiz-body">
+          <div id="scoreTimer" class="scoreTimer" style="display: none;">
+            <h2>Time Left</h2>
+            <br/>
+            <h2 id="timer">Time Left</h2>
+          </div>
+          <div id="cont" class="container" style="display: none;">
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content" id="popup-content">
+          <div id="firework-content"></div>
+          <h1>Final Score</h1>
+          <h2 id="score"></h2>
+          <div class="row">
+            <button
+              class="popup-button"
+              onclick="window.location.href='index.html';"
+            >
+              Restart
+            </button>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+  </body>
+</html>
